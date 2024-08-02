@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {coords: "52.229,21.012", name: "Warsaw, Poland"},
         {coords: "53.961,-1.07", name: "York, England"},
         {coords: "47.376,8.541", name: "Zurich, Switzerland"}
+       
     ];
 
     // Populate the dropdown
@@ -137,3 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'ra': 'wi wi-rain',
             'snow': 'wi wi-snow',
             'rainsnow': 'wi wi-rain-mix',
+            'ts': 'wi wi-thunderstorm',
+            'tsrain': 'wi wi-thunderstorm'
+        };
+        return weatherIcons[weather] || 'wi wi-na'; // Default icon for unknown weather
+    }
+});
